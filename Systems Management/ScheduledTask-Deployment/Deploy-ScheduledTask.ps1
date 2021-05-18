@@ -42,4 +42,6 @@ $TriggerSetTime = "$($TriggerTime)$($TriggerTimeAMPM)"
 
 $Trigger = New-ScheduledTaskTrigger -At $TriggerSetTime –Daily # Specify the trigger settings
 $Action = New-ScheduledTaskAction -Execute "$($TaskAction)" -Argument "$($TaskActionArguement)" # Specify what program to run and with its parameters
-Register-ScheduledTask -TaskName "$($TaskName)" -Description "$($TaskName)" -Trigger $Trigger -User $User -Action $Action -RunLevel Highest -Password $Password -Force 
+Register-ScheduledTask -TaskName "$($TaskName)" -Description "$($TaskName)" -Trigger $Trigger -User $User -Action $Action -RunLevel Highest -Password $Password -Force Register-ScheduledTask -TaskName "$($TaskName)" -Description "$($TaskName)" -Trigger $Trigger -User $User -Action $Action -RunLevel Highest -Password $Password -Force 
+
+
