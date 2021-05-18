@@ -13,7 +13,7 @@ __Example:__ John Smith , the username will be jsmith
 Usage:
   
 ```powershell
-./New-ADUsers.ps1 -UserListCSV "C:\pathto\userlist.csv" -CopyUser username -DomainController domaincontrollername -UserNameType >>First-Inital-LastName
+./New-ADUsers.ps1 -UserListCSV "C:\pathto\userlist.csv" -CopyUser username -DomainController domaincontrollername -UserNameType First-Inital-LastName
 ```
 
 The Below will just will create a user from CSV, copy all AD Group Memberships from the target user and it will create the sAMAccountName (username) FirstName.LastName
